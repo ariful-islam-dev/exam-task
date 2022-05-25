@@ -1,38 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@400;500;700;800&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  background: tomato;
+  flex: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.showCount {
+  flex: 20%;
+  padding: 20px;
+  color: #fff;
+  margin: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 3px 2px 5px grey;
+  background: #31db56;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.showCount h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 1px 1px 5px #c202e5;
+}
+.showBnt {
+  flex: 80%;
+  padding: 20px;
+}
+.showBnt button {
+  width: 200px;
+  font-size: 60px;
+  margin: 10px;
+  border: none;
+  background: #d50ced;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 3px #000;
 }
